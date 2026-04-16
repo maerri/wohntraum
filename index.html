@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mietbewerbung | Lehrkräfte aus Freiburg</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* GLOBALER FIX FÜR TEXTBOXEN */
+			.text-box, .text-box strong {
+				letter-spacing: 0 !important;
+				text-transform: none !important;
+				line-height: 1.6 !important;
+				display: block;
+			}
+
+			#main, .extra-block {
+				text-align: left !important;
+				max-width: 52em !important;
+				width: 100% !important;
+				padding: 3.5em !important;
+				border-radius: 12px !important;
+				background: #ffffff !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				margin-bottom: 2em;
+			}
+
+			#main .avatar:before { display: none !important; }
+
+			.profile-container {
+				display: flex !important;
+				flex-direction: row !important;
+				gap: 3.5em !important;
+				align-items: flex-start;
+			}
+
+			.profile-left { flex: 0 0 220px !important; text-align: center; }
+			.profile-right { flex: 1 !important; display: flex; flex-direction: column; }
+
+			.avatar img {
+				width: 200px !important;
+				height: 200px !important;
+				border-radius: 50% !important;
+				border: 1px solid #f0f0f0;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+				object-fit: cover;
+			}
+
+			/* SYMPATHIE-FEATURES (3er Reihe) */
+			.mini-features-row {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 10px;
+				margin-top: 1.5em;
+				justify-items: center;
+			}
+			.feature-box {
+				font-size: 0.55rem;
+				color: #aaa;
+				text-transform: uppercase;
+				font-weight: 700;
+				line-height: 1.2;
+				text-align: center;
+			}
+			.feature-box span {
+				display: block;
+				font-size: 1.5rem;
+				margin-bottom: 6px;
+			}
+
+			/* RECHTE SPALTE */
+			.status-bubble {
+				background: #1a3a5f;
+				color: #fff;
+				padding: 5px 12px;
+				font-size: 0.7rem;
+				font-weight: 700;
+				display: inline-block;
+				margin-bottom: 1.2em;
+				border-radius: 4px;
+				text-transform: uppercase;
+				align-self: flex-start;
+			}
+
+			h1 {
+				margin: 0 !important;
+				font-size: 2.0rem !important;
+				color: #1a3a5f !important;
+				font-weight: 300 !important;
+				letter-spacing: -0.01em !important;
+				text-transform: none !important;
+			}
+			h1 b { font-weight: 700 !important; }
+
+			.profession-sub {
+				font-size: 1rem;
+				color: #888;
+				margin: 0.5em 0 1.2em 0;
+				text-transform: none;
+				letter-spacing: 0;
+			}
+
+			/* KONTAKT ICONS - RECHTSBÜNDIG UNTER TEXT */
+			.contact-right-align {
+				margin-top: 2em;
+				padding-top: 1.5em;
+				border-top: 1px solid #eee; /* Leichte Trennung zum Text */
+				align-self: flex-end; /* Schiebt Icons nach rechts */
+			}
+			.contact-right-align ul.icons {
+				display: flex !important;
+				gap: 1.2em !important;
+				list-style: none !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			.contact-right-align ul.icons li a {
+				width: 2.2em !important;
+				height: 2.2em !important;
+				line-height: 2.2em !important;
+				border-color: #eee !important;
+				color: #1a3a5f !important;
+			}
+			.contact-right-align ul.icons li a:before { font-size: 0.9rem !important; }
+
+			/* UNTERE BLÖCKE */
+			.block-title {
+				font-size: 0.8rem;
+				color: #1a3a5f;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				margin-bottom: 1.5em;
+				border-bottom: 2px solid #1a3a5f;
+				display: inline-block;
+				padding-bottom: 3px;
+			}
+			.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; }
+			.tag { background: #edf2f7; color: #1a3a5f; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; display: inline-block; margin: 4px 4px 0 0; }
+
+			@media screen and (max-width: 736px) {
+				.profile-container, .grid-2 { flex-direction: column !important; align-items: center; }
+				.profile-left { margin-bottom: 2em; }
+				.contact-right-align { align-self: center; border-top: 0; }
+			}
+		</style>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			
+			<section id="main">
+				<header>
+					<div class="profile-container">
+						<div class="profile-left">
+							<span class="avatar"><img src="images/paar-foto.jpeg" alt="Paar" /></span>
+							<div class="mini-features-row">
+								<div class="feature-box"><span>🚭</span>Nicht-<br>raucher</div>
+								<div class="feature-box"><span>🐾</span>Keine<br>Tiere</div>
+								<div class="feature-box"><span>🪴</span>Grüner<br>Daumen</div>
+							</div>
+						</div>
+
+						<div class="profile-right">
+							<div class="status-bubble">Gesucht: 2-3-Zimmer in Freiburg</div>
+							<h1>Katina Edig & <b>Marius Hägele</b></h1>
+							<p class="profession-sub">Grundschullehrerin & Gymnasiallehrer</p>
+							<p class="text-box" style="color: #666; font-size: 0.95rem;">
+								Uns reicht es mit Fernbeziehung: Zum 01.08. (wahlweise auch früher) möchten wir endlich in ein gemeinsames Zuhause einziehen. Dafür suchen wir eine langfristige Wohnung in Freiburg.
+							</p>
+							
+							<div class="contact-right-align">
+								<ul class="icons">
+									<li><a href="tel:015781638856" class="fa-phone">Telefon</a></li>
+									<li><a href="mailto:wir.3z@posteo.de" class="fa-envelope">Email</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="extra-block">
+				<div class="block-title">Was wir suchen</div>
+				<div class="grid-2">
+					<div class="text-box">
+						<strong style="color: #00162f;">Wohnraum</strong>
+						Helle 2-3-Zimmer-Wohnung mit EBK ab 60m², gerne mit Balkon, Loggia oder Gartenanteil.<br>Da wir beide im Schuldienst tätig sind, benötigen wir eine ruhige Umgebung mit Platz für einen Arbeitsbereich zur Unterrichtsvorbereitung.<br>
+					</div>
+					<div class="text-box">
+						<strong style="color: #00162f;">Lage & Budget</strong>
+						Bevorzugt Wiehre, Herdern oder Oberau.<br>
+						Budget: 1.300 € Warmmiete.
+					</div>
+				</div>
+			</section>
+
+			<section class="extra-block">
+				<div class="block-title">Über uns & Hobbys</div>
+				<div class="grid-2">
+					<div class="text-box">
+						In unserer Freizeit sind wir gerne in der Natur unterwegs, kochen gemeinsam und spielen Kniffel in Cafés.<br> Wir schätzen ein gepflegtes und ruhiges Wohnumfeld.
+					</div>
+					<div class="text-box">
+						<span class="tag">🏔️ Wandern & Campen</span>
+						<span class="tag">🍕 Pizza backen</span>
+						<span class="tag">📚 Lesen</span>
+						<span class="tag">☀️ Auf dem Balkon sonnen</span>
+						<span class="tag">🍝 Spaghettieis essen</span>
+						<span class="tag">🏓 Tischtennis spielen</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="extra-block">
+				<div class="block-title">Unterlagen</div>
+				<div class="grid-1">
+					<div class="text-box">
+						Weitere Informationen und Unterlagen legen wir bei Bedarf gerne vor. Wir freuen uns über jeden Anruf und jede Nachricht.
+				</div>
+			</section>
+
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Hägele</li>
+					<li>2026</li>
+					<li><a href="legal.html">Impressum & Datenschutz</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+		</div>
+
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+			}
+		</script>
+	</body>
+</html>
